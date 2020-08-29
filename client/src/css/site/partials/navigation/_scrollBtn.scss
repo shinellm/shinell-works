@@ -20,11 +20,13 @@ $anim-timing: 3s;
         border: none;
         outline: 0px;
         cursor: pointer;
+        pointer-events: none; 
         opacity: 0;
         z-index: 1000;
         transition: opacity 0.5s ease-in-out, right 0.5s ease-in-out, bottom 0.2s ease-in-out;
 
         &.active {
+            pointer-events: auto;
             right: 1.4rem;        
             opacity: 1;
 
