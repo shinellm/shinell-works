@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from './components/nav/Header';
+import Home from './views/Home';
+// import Works from './views/ProjectsGallery';
+// import SinglePageView from './views/SinglePageView';
+import Footer from './components/nav/Footer';
+import ScrollButton from './components/nav/ScrollBtn';
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header history={this.props.history}/>
+
+        <Switch>
+          <Route exact path="/" history={this.props.history} component={Home}></Route>
+          {/* <Route exact path="/works" render={ (routerProps) => <Works {...routerProps} />}></Route>
+          <Route exact path="/works/:id" render={ (routerProps) => <SinglePageView {...routerProps} />} ></Route> */}
+        </Switch>
+
+        <ScrollButton targetId="root" behavior="smooth" iconType="arrow-up" />
+
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
