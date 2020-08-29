@@ -63,7 +63,7 @@ export default class Header extends Component {
     render () {
         return (
             <header>
-                <Navbar collapseOnSelect fixed="top" expand="lg" bg="dark" variant="dark" expanded={this.state.expanded}>
+                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" expanded={this.state.expanded}>
                     <div className="header-bar">
                         <Nav.Link key={ `home ${ this.isActive('/') } ` } className="navbar-brand" href="/" onClick={() => this.handleClick('/')}>
                             {/* <img className='logo' src={logo} alt="" />{' '} */}
