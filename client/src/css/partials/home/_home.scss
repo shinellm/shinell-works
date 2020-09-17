@@ -1,0 +1,16 @@
+// @import "hero";
+// @import "about";
+@import "services";
+// @import "process";
+// @import "featured";
+@import "contact";
+@import "sectionBanner";
+
+#home-container {
+    background: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
