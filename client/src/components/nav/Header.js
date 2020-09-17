@@ -66,7 +66,7 @@ export default class Header extends Component {
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" expanded={this.state.expanded}>
                     <div className="header-bar">
                         <Nav.Link key={ `home ${ this.isActive('/') } ` } className="navbar-brand" href="/" onClick={() => this.handleClick('/')}>
-                            {/* <img className='logo' src={logo} alt="" />{' '} */}
+                            {/* <img className='logo' src={logo} alt="" /> */}
                             <span className='logo-text align-middle'>Shinell<b>Manwaring</b></span>
                         </Nav.Link>
                         <Navbar.Toggle aria-controls="header-navbar-nav" onClick={() => this.setExpanded(this.state.expanded ? false : true)}/>

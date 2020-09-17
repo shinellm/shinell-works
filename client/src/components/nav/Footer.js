@@ -11,10 +11,13 @@ function Footer() {
         <footer>
             <Navbar bg="light" variant="light">
                 <span className="navbar-brand" href="/">
-                    {/* <img className='logo' src={logo} alt="" />{' '} */}
+                    {/* <img className='logo' src={logo} alt="" /> */}
                     <span className="copyright">
                         <span className='logo-text'>&copy; 2020 Shinell<b>Manwaring</b></span>
-                        <span className="collab">In collaboration with<span className="heart"> ❤ </span>Ayarza Manwaring</span>
+                        <span className="collab">In collaboration with
+                            <span className="heart"> ❤ </span>
+                            <Nav.Link className="collab-link" href="https://www.ayarzamanwaring.com" aria-label="" target="_blank" rel="noreferrer">Ayarza Manwaring</Nav.Link>
+                        </span>
                     </span>
                 </span>
                 <Nav className="ml-auto">
