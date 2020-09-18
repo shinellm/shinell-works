@@ -34,7 +34,7 @@ export default class FullPageNav extends Component {
     }
 
     setSectionActive() {
-        let content = document.querySelectorAll('#hero, #about, #featured, #contact');
+        let content = document.querySelectorAll('#hero, #about, #services, #process, #featured, #contact');
 
         content.forEach( (item) => {
             let itemTopPosition = item.getBoundingClientRect().top;
@@ -55,6 +55,12 @@ export default class FullPageNav extends Component {
                     break;
                 case 'about':
                     this.setState({ activeNav: '/#about' });
+                    break;
+                case 'services':
+                    this.setState({ activeNav: '/#services' });
+                    break;
+                case 'process':
+                    this.setState({ activeNav: '/#process' });
                     break;
                 case 'featured':
                     this.setState({ activeNav: '/#featured' });
@@ -100,6 +106,22 @@ export default class FullPageNav extends Component {
                         <HashLink key={`about-${this.checkPath('/#about')}`} className={this.checkPath('/#about')} to="/" hashId="#about" behavior="smooth">
                             <div onClick={() => this.handleClick('/#about')}>
                                 <span className="full-page-nav-title">About</span>
+                                <span className="nav-circle"></span>
+                            </div>
+                        </HashLink>
+                    </li>
+                    <li>
+                        <HashLink key={`services-${this.checkPath('/#services')}`} className={this.checkPath('/#services')} to="/" hashId="#services" behavior="smooth">
+                            <div onClick={() => this.handleClick('/#services')}>
+                                <span className="full-page-nav-title">Services</span>
+                                <span className="nav-circle"></span>
+                            </div>
+                        </HashLink>
+                    </li>
+                    <li>
+                        <HashLink key={`process-${this.checkPath('/#process')}`} className={this.checkPath('/#process')} to="/" hashId="#process" behavior="smooth">
+                            <div onClick={() => this.handleClick('/#process')}>
+                                <span className="full-page-nav-title">Process</span>
                                 <span className="nav-circle"></span>
                             </div>
                         </HashLink>
