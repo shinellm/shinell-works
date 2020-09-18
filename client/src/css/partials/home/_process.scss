@@ -1,0 +1,108 @@
+.process-container {
+    .process-section {
+        min-height: 100vh;
+        
+        .single-process {
+            width: 60%;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .process-contents {
+                position: relative;
+                width: 80%;
+                max-width: 600px;
+                padding: 2em;
+                margin: 2em auto;
+
+                .process-text {
+                    margin-left: auto; 
+        
+                    h2 {
+                        margin-bottom: 1rem;
+                    }
+                }
+                .decor-background {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: .25rem;
+                    background-color: #FFBC94;
+                    transform: scale(1.25);
+                    clip-path: polygon(5% 0%, 85% 8%, 100% 80%, 15% 100%);
+                    z-index: -1;
+                }
+        
+                .decor-frame {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid black;
+                    filter: drop-shadow(2px 2px 2px black);
+                }
+                svg.arrow-doodle {
+                    position: absolute;
+                    right: -65%;
+                    bottom: -100%;
+                    transform: rotate(20deg) scale(0.75);
+    
+                    path {
+                        stroke-dasharray: 638;
+                        stroke-dashoffset: 638;
+                        animation: dash-anim 4s linear infinite;
+                    }
+                }
+            }
+        }
+
+        .single-process:nth-child(2) {
+            margin-left: auto;
+
+            .process-contents {
+                .decor-background {
+                    clip-path: polygon(24% 0, 88% 18%, 97% 100%, 0 86%);
+                }
+                svg.arrow-doodle {
+                    right: 0;
+                    bottom: -100%;
+                    transform: rotate(112deg) scale(0.75);
+                }
+            }
+        }
+
+        .single-process:nth-child(3) .process-contents .decor-background {
+            clip-path: polygon(3% 30%, 68% 0, 100% 84%, 15% 100%);
+        }
+    }
+}
+
+@keyframes dash-anim {
+    0% {
+        stroke-dashoffset: -638;
+    }
+    30% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/********** Small devices (landscape phones, 576px and up) Small devices (landscape phones, 576px and up) and Extra small devices (portrait phones, less than 576px) **********/
+@media only screen and (max-width: 767.98px) {
+
+    .process-container .process-section .single-process {
+        width: 90%;
+        margin: auto;
+        min-height: 60vh;
+
+        .process-contents svg.arrow-doodle {
+            display: none;
+        }
+    }
+}
