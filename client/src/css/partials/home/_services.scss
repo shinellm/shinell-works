@@ -10,7 +10,7 @@
 
         .services-offered {
             width: 90%;
-            max-width: 1300px;
+            max-width: 1100px;
             margin: 5em 0;
             text-align: center;
             display: flex;
@@ -18,12 +18,13 @@
             flex-flow: row wrap;
     
             .single-service {
-                width: 250px;
                 min-width: 250px;
+                max-width: 300px;
                 margin: 2em;
                 border: 1px solid rgba(0,0,0,.125);
                 border-radius: .25rem;
-                box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.25);
+                // box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.25);
+                filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
     
                 .card-body {
                     .service-icon {
@@ -54,5 +55,12 @@
                 }
             }
         }
+    }
+}
+
+/********** Small devices (landscape phones, 576px and up) Small devices (landscape phones, 576px and up) and Extra small devices (portrait phones, less than 576px) **********/
+@media only screen and (max-width: 767.98px) {
+    .services-container .grouped-services .services-offered .single-service {
+        max-width: unset;
     }
 }

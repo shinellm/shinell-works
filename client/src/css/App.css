@@ -804,7 +804,7 @@ footer .navbar .social-logo.nav-link:hover {
 
 .services-container .grouped-services .services-offered {
   width: 90%;
-  max-width: 1300px;
+  max-width: 1100px;
   margin: 5em 0;
   text-align: center;
   display: -webkit-box;
@@ -820,13 +820,13 @@ footer .navbar .social-logo.nav-link:hover {
 }
 
 .services-container .grouped-services .services-offered .single-service {
-  width: 250px;
   min-width: 250px;
+  max-width: 300px;
   margin: 2em;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: .25rem;
-  -webkit-box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.25);
+  -webkit-filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
 }
 
 .services-container .grouped-services .services-offered .single-service .card-body .service-icon {
@@ -848,6 +848,13 @@ footer .navbar .social-logo.nav-link:hover {
 .services-container .grouped-services .services-offered .single-service .card-body .service-icon svg {
   z-index: 1;
   fill: #000000;
+}
+
+/********** Small devices (landscape phones, 576px and up) Small devices (landscape phones, 576px and up) and Extra small devices (portrait phones, less than 576px) **********/
+@media only screen and (max-width: 767.98px) {
+  .services-container .grouped-services .services-offered .single-service {
+    max-width: unset;
+  }
 }
 
 .process-container .process-section {
