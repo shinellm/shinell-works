@@ -1,0 +1,129 @@
+.scroll-section {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+
+    .scroll-label {
+        position: fixed;
+        width: 240px;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container {
+        position: sticky;
+        top: 0px;
+        overflow: hidden;
+        width: 50%;
+        height: 100vh;
+        background-color: #000000;
+
+        .single-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: 0.5s opacity ease-in;
+
+            &.appear {
+                opacity: 1;
+            }
+        }
+    }
+
+    .project-container {
+        width: 50%;
+        height: 100%;
+
+        &.background {
+            transition: 0.5s background-color ease-in;
+        }
+
+        .single-project {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s opacity ease-in;
+
+            .project-contents {
+                position: relative;
+                width: 80%;
+                padding: 2em;
+                z-index: 1;
+
+                .project-description {
+                    margin-bottom: 2rem;
+                }
+
+                button {
+                    width: 200px;
+                    height: 40px;
+                    color: white;
+                    background-color: #5E77FF;
+                    border: 0;
+                    border-radius: 20px;
+                }
+
+                .decor-background {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform: translate(1.5em, 1.5em);
+                    border-radius: .25rem;
+                    background-color: #FFBC94;
+                    z-index: -1;
+                }
+
+                .decor-frame {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid black;
+                    filter: drop-shadow(2px 2px 2px black);
+                }
+            }
+        }
+
+        .single-project:nth-child(2) .project-contents .decor-background {
+            background-color: #FFA4CA;
+        } 
+        .single-project:nth-child(3) .project-contents .decor-background {
+            background-color: #C6A4FF;
+        }
+    }
+}
+
+
+// /********** Small devices (landscape phones, 576px and up) **********/
+@media only screen and (max-width: 767.98px) {
+    .scroll-section {
+        .scroll-label, .image-container {
+            display: none;
+        }
+        .project-container {
+            width: 100%;
+
+            .single-project {
+                height: 80vh;
+
+                .project-contents {
+                    width: 80%
+                }
+            }
+        }
+    }
+}

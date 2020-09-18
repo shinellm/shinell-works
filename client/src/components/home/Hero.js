@@ -23,7 +23,7 @@ export default class Hero extends Component {
                     <div className="circle-one"></div>
                     <div className="circle-two"></div>
                     <div className="filter"></div>
-                    <img className="hero-image" src={"../images/lorenzo-herrera-unsplash.jpg"} alt="Retro technology"></img>
+                    <img className="hero-image" alt="Retro technology" src={"../images/lorenzo-herrera-unsplash.jpg"} />
                 </div>
             </section>
         );
