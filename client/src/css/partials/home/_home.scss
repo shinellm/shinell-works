@@ -1,11 +1,11 @@
 @import "hero";
-// @import "about";
+@import "about";
 @import "services";
 // @import "process";
-// @import "featured";
+@import "featured";
+@import "scrollSection";
 @import "contact";
 @import "sectionBanner";
-@import "scrollSection";
 
 #home-container {
     background: #FFFFFF;

@@ -1,0 +1,105 @@
+.about-container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+
+    .about-contents {
+        min-height: 60vh;
+        position: relative;
+        padding: 3em 0em;
+
+        .about-image {
+            width: 35%;
+            height: 90%;
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            transform: translateY(-50%);
+            z-index: 1;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: .25rem;
+                filter: drop-shadow(2px 2px 6px black);
+            }
+        }
+        .about-text {
+            width: 50%;
+            margin-left: auto; 
+            padding: 0 3em 0 2em;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+        }
+        .decor-background {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 90%;
+            height: 100%;
+            transform: translateY(-50%);
+            border-radius: .25rem;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            background-color: #FDF8F5;
+            z-index: -1;
+        }
+
+        .decor-frame {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 70%;
+            height: 120%;
+            transform: translateY(-50%);
+            border: 1px solid black;
+            border-right: 0;
+            // filter: drop-shadow(2px 2px 2px black);
+        }
+    }
+}
+
+/********** Small devices (landscape phones, 576px and up) and Extra small devices (portrait phones, less than 576px) **********/
+@media only screen and (max-width: 767.98px) {
+    .about-container {
+        margin: 3em 0;
+            
+        .about-contents {
+            .about-image {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: unset;
+                width: 50%;
+                margin: auto;
+                margin-bottom: 2em;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .about-text {
+                width: 80%;
+                padding: 0 1em;
+                margin-right: auto;
+                text-align: center;
+            }
+            .decor-background {
+                right: 50%;
+                transform: translate(50%, -50%);
+            }
+            .decor-frame {
+                width: 80%;
+                height: 105%;
+                right: 50%;
+                transform: translate(50%, -50%);
+                border-right: 1px solid;
+            }
+
+        }
+    }
+}

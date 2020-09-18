@@ -14,7 +14,7 @@ class Home extends Component {
   render() {
     return (
       <div id="home" className="home-container">
-        {/* <FullPageNav history={this.props.history}/> */}
+        <FullPageNav history={this.props.history}/>
         <Hero />
         <About />
         <Services />

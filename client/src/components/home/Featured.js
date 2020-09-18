@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Nav } from 'react-bootstrap';
+
 import SectionBanner from "./SectionBanner";
 import ScrollSection from "./ScrollSection";
 
@@ -11,7 +13,7 @@ export default class Featured extends Component {
                 </SectionBanner>
                 <ScrollSection />
                 <SectionBanner>
-                    <h2>Curious to see more? <span className="colored-text">Visit my project gallery!</span></h2>
+                    <h2>Curious to see more? <Nav.Link className="colored-text" href={`/works`}>Visit my project gallery!</Nav.Link></h2>
                 </SectionBanner>
             </section>
         )

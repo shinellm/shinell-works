@@ -4,7 +4,6 @@ import { FaArrowRight } from "react-icons/fa";
 export default class ScrollSection extends Component {
     constructor() {
         super();
-
         this.scrollAppear = this.scrollAppear.bind(this);
     }
 
