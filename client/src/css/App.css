@@ -684,6 +684,7 @@ footer .navbar .social-logo.nav-link:hover {
   min-height: 60vh;
   position: relative;
   padding: 3em 0em;
+  margin: 5em 0;
 }
 
 .about-container .about-contents .about-image {
@@ -790,7 +791,6 @@ footer .navbar .social-logo.nav-link:hover {
 
 .services-container .grouped-services {
   min-height: 100vh;
-  padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -803,7 +803,9 @@ footer .navbar .social-logo.nav-link:hover {
 }
 
 .services-container .grouped-services .services-offered {
-  max-width: 1000px;
+  width: 90%;
+  max-width: 1300px;
+  margin: 5em 0;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,7 +822,7 @@ footer .navbar .social-logo.nav-link:hover {
 .services-container .grouped-services .services-offered .single-service {
   width: 250px;
   min-width: 250px;
-  margin: 1em;
+  margin: 2em;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: .25rem;
   -webkit-box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.25);
@@ -850,6 +852,7 @@ footer .navbar .social-logo.nav-link:hover {
 
 .process-container .process-section {
   min-height: 100vh;
+  margin: 4em 0;
 }
 
 .process-container .process-section .single-process {
@@ -1139,7 +1142,6 @@ footer .navbar .social-logo.nav-link:hover {
 
 .contact-container {
   min-height: 100vh;
-  padding: 2em 0;
   background-color: #f8ebe6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1158,15 +1160,17 @@ footer .navbar .social-logo.nav-link:hover {
 }
 
 .contact-container .contact-contents {
-  width: 90%;
+  width: 80%;
+  margin: 5em 0;
 }
 
 .contact-container .contact-contents .contact-header {
-  margin-bottom: 2em;
+  margin: 0 auto 2em auto;
+  width: 100%;
 }
 
 .contact-container .contact-contents .contact-form {
-  width: 80%;
+  width: 100%;
   max-width: 800px;
   margin: auto;
   display: -ms-grid;
@@ -1274,7 +1278,7 @@ footer .navbar .social-logo.nav-link:hover {
 .section-banner-container {
   width: 100vw;
   min-height: 35vh;
-  padding: 2em;
+  padding: 2em 0;
   background-color: #FDF8F5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1289,6 +1293,7 @@ footer .navbar .social-logo.nav-link:hover {
 }
 
 .section-banner-container h2 {
+  width: 90%;
   max-width: 1000px;
 }
 

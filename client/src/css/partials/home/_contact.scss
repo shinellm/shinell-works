@@ -1,6 +1,5 @@
 .contact-container {
     min-height: 100vh;
-    padding: 2em 0;
     // background-color: #FDF5F9;
     // background-color: #fdebd2;
     // background-color: #2f466c;
@@ -17,13 +16,15 @@
     flex-flow: column;
 
     .contact-contents {
-        width: 90%;
+        width: 80%;
+        margin: 5em 0;
 
         .contact-header {
-            margin-bottom: 2em;
+            margin: 0 auto 2em auto ;
+            width: 100%;
         }
         .contact-form {
-            width: 80%;
+            width: 100%;
             max-width: 800px;
             margin: auto;
             display: grid;

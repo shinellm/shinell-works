@@ -1,7 +1,7 @@
 .section-banner-container {
     width: 100vw;
     min-height: 35vh;
-    padding: 2em;
+    padding: 2em 0;
     background-color: #FDF8F5;
     display: flex;
     align-items: center;
@@ -9,6 +9,7 @@
     text-align: center;
 
     h2 {
+        width: 90%;
         max-width: 1000px;
     }
 }
