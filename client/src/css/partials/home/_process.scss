@@ -5,7 +5,7 @@
         
         .single-process {
             width: 60%;
-            min-height: 70vh;
+            min-height: 60vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -49,7 +49,7 @@
                 svg.arrow-doodle {
                     position: absolute;
                     right: -65%;
-                    bottom: -100%;
+                    bottom: -95%;
                     transform: rotate(20deg) scale(0.75);
     
                     path {
@@ -69,8 +69,8 @@
                     clip-path: polygon(24% 0, 88% 18%, 97% 100%, 0 86%);
                 }
                 svg.arrow-doodle {
-                    right: 0;
-                    bottom: -100%;
+                    right: 16%;
+                    bottom: -110%;
                     transform: rotate(112deg) scale(0.75);
                 }
             }
@@ -94,9 +94,22 @@
     }
 }
 
+/********** Medium devices (tablets, 768px and up) **********/
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .process-container .process-section {
+        .single-process .process-contents svg.arrow-doodle {
+            right: -90%;
+            bottom: -60%;
+        }
+        .single-process:nth-child(2) .process-contents svg.arrow-doodle {
+            right: -10%;
+            bottom: -95%;
+        }
+    }
+}
+
 /********** Small devices (landscape phones, 576px and up) Small devices (landscape phones, 576px and up) and Extra small devices (portrait phones, less than 576px) **********/
 @media only screen and (max-width: 767.98px) {
-
     .process-container .process-section .single-process {
         width: 90%;
         margin: auto;

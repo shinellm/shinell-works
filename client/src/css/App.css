@@ -857,7 +857,7 @@ footer .navbar .social-logo.nav-link:hover {
 
 .process-container .process-section .single-process {
   width: 60%;
-  min-height: 70vh;
+  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -914,7 +914,7 @@ footer .navbar .social-logo.nav-link:hover {
 .process-container .process-section .single-process .process-contents svg.arrow-doodle {
   position: absolute;
   right: -65%;
-  bottom: -100%;
+  bottom: -95%;
   -webkit-transform: rotate(20deg) scale(0.75);
           transform: rotate(20deg) scale(0.75);
 }
@@ -936,8 +936,8 @@ footer .navbar .social-logo.nav-link:hover {
 }
 
 .process-container .process-section .single-process:nth-child(2) .process-contents svg.arrow-doodle {
-  right: 0;
-  bottom: -100%;
+  right: 16%;
+  bottom: -110%;
   -webkit-transform: rotate(112deg) scale(0.75);
           transform: rotate(112deg) scale(0.75);
 }
@@ -968,6 +968,18 @@ footer .navbar .social-logo.nav-link:hover {
   }
   100% {
     stroke-dashoffset: 0;
+  }
+}
+
+/********** Medium devices (tablets, 768px and up) **********/
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .process-container .process-section .single-process .process-contents svg.arrow-doodle {
+    right: -90%;
+    bottom: -60%;
+  }
+  .process-container .process-section .single-process:nth-child(2) .process-contents svg.arrow-doodle {
+    right: -10%;
+    bottom: -95%;
   }
 }
 
