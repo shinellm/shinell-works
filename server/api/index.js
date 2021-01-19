@@ -1,9 +1,11 @@
-var express = require('express');
-var router = express.Router();
+const router = require('express').Router()
+module.exports = router
 
-/* Test api routing */
-router.get('/', function(req, res, next) {
-  res.send('Welcome to your express server! Start creating and editing your api routes in the server/api folder.');
-});
+router.use('/mail', require('./mail'))
+router.use('works', require('./works'))
 
-module.exports = router;
+router.use((req, res, next) => {
+  const error = new Error('Not Found')
+  error.status = 404
+  next(error)
+})

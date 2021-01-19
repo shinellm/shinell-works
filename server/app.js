@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
+const database = require('./db/database')
 
 const isDev = process.env.NODE_ENV !== 'production';
 const PORT = process.env.PORT || 8080;
@@ -59,9 +60,12 @@ const startListening = () => {
   const server = app.listen(PORT, () => console.log(`Node ${isDev ? 'dev server' : 'production server'}: Mixing it up on port ${PORT}`));
 }
 
+const syncDb = () => database.sync();
+
 async function bootApp() {
-  createApp();
-  startListening();
+  await syncDb
+  await createApp();
+  await startListening();
 }
 // This evaluates as true when this file is run directly from the command line,
 // i.e. when we say 'node server/index.js' (or 'nodemon server/index.js', or 'nodemon server', etc)
