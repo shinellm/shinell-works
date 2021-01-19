@@ -2,14 +2,25 @@
     width: 100vw;
     min-height: 35vh;
     padding: 2em 0;
-    background-color: #FDF8F5;
+    // background-color: #FDF8F5;
+    // background-color: #fdebd2;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 
-    h2 {
-        width: 90%;
-        max-width: 1000px;
+    .banner-text {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        text-align: center;
+
+        h2 {
+            max-width: 550px;
+        }
+        p {
+            font-size: 1.5rem;
+            width: 55%;
+        }
     }
 }

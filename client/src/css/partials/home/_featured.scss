@@ -1,5 +1,18 @@
 .featured-container {
+    .decor-trim-top {
+        height: 5em;
+        background-color: #fdebd2;
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    }
+    .section-banner-container {
+        background-color: #fdebd2;
+    }
     .colored-text {
         text-decoration: underline;
+    }
+    .decor-trim-bottom {
+        height: 5em;
+        background-color: #fdebd2;
+        clip-path: polygon(0 0, 0 100%, 100% 0);
     }
 }

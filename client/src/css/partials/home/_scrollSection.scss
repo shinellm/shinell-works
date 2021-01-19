@@ -22,7 +22,8 @@
         overflow: hidden;
         width: 50%;
         height: 100vh;
-        background-color: #000000;
+        // background-color: #000000;
+        background-color: #fdebd2;
 
         .single-image {
             position: absolute;
@@ -43,6 +44,7 @@
     .project-container {
         width: 50%;
         height: 100%;
+        background-color: #fdebd2;
 
         &.background {
             transition: 0.5s background-color ease-in;

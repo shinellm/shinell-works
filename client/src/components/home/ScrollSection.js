@@ -48,7 +48,7 @@ export default class ScrollSection extends Component {
                 projectBackground.style.backgroundColor = '#e8dbff';
                 break;
             default:
-                projectBackground.style.backgroundColor = '#FFFFFF';
+                projectBackground.style.backgroundColor = '#fdebd2';
                 break;
         }
     }
