@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ReactComponent as Mouse } from "../../images/svg/mouse.svg";
+// import { ReactComponent as Mouse } from "../../images/svg/mouse.svg";
 import { ReactComponent as Innovate } from "../../images/svg/textInnovate.svg";
 import { FaArrowRight } from "react-icons/fa";
 
